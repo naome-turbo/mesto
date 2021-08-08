@@ -1,0 +1,28 @@
+.edit__button-save {
+  font-family: "Inter", Arial, sans-serif;
+  color: #fff;
+  background-color: #000;
+  height: 50px;
+  width: 358px;
+  border-radius: 2px;
+  border: none;
+  margin: auto 36px auto 36px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  font-weight: 22px;
+  text-align: center;
+  cursor: pointer;
+}
+.edit__button-save:hover {
+
+  opacity: 0.5;
+}
+
+@media (max-width: 568px) {
+  .edit__button-save {
+    width: 238px;
+    height: 46px;
+    font-size: 14px;
+    font-weight: 17px;
+  }
