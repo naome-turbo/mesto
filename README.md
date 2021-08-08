@@ -1,5 +1,5 @@
 # Проект: Место
-Ссылка на проект: https://github.com/naome-turbo/mesto/blob/main/index.html
+Ссылка на проект: file:///C:/Users/Knst/dev/mesto-main%20(1)/mesto-main/index.html
 
 Файловая структура проекта построена по БЭМ.
 Использовались flex и grid.
