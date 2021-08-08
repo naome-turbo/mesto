@@ -1,5 +1,5 @@
 # Проект: Место
-* [Ссылка на проект](https://naome-turbo.github.io/russian-travel/index.html)
+* [Ссылка на проект](https://naome-turbo.github.io/mesto/index.html)
 
 Файловая структура проекта построена по БЭМ.
 Использовались flex и grid.
