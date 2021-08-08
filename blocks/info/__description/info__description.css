@@ -1,0 +1,16 @@
+.info__description {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  font-style: normal;
+  margin-top: 16px;
+}
+
+@media (max-width: 568px) {
+  .info__description {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
