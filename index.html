@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Клюво-блогер</title>
+    <link rel="stylesheet" href="./pages/index.css">
+
+</head>
+
+<body class="page section">
+  <header class="header">
+    <img class="header__logo" src="./images/logo.png" alt="Логотип">
+  </header>
+
+  <main>
+    <section class="profile section">
+      <img class="profile__avator" src="./images/avator.jpg" alt="Аватор">
+      <div class="profile__info">
+        <div class="info">
+          <h1 class="info__name">Клюв</h1>
+          <p class="info__description">Travel-блогер</p>
+        </div>
+        <button class="profile__pencil" id="open_edit_btn" type="button" aria-label="Редактировать"></button>
+      </div>
+      <button class="profile__add" type="button" aria-label="Добавить"></button>
+    </section>
+
+    <section class="cards-grid section">
+      <ul class="cards-grid__list">
+        <li class="cards-grid__list-item">
+          <img src="./images/sea.jpg" alt="Море" class="cards-grid__item">
+          <div class="grid-menu">
+            <h2 class="grid-menu__name">Море</h2>
+            <button class="grid-menu__like" type="button" aria-label="Лайк"></button>
+          </div>
+        </li>
+        <li class="cards-grid__list-item">
+          <img src="./images/forest.jpg" alt="Лес" class="cards-grid__item">
+          <div class="grid-menu">
+            <h2 class="grid-menu__name">Лес</h2>
+            <button class="grid-menu__like" type="button" aria-label="Лайк"></button>
+          </div>
+        </li>
+        <li class="cards-grid__list-item">
+          <img src="./images/beach.jpg" alt="Пляж" class="cards-grid__item">
+          <div class="grid-menu">
+            <h2 class="grid-menu__name">Пляж</h2>
+            <button class="grid-menu__like" type="button" aria-label="Лайк"></button>
+          </div>
+        </li>
+        <li class="cards-grid__list-item">
+          <img src="./images/house.jpg" alt="Дом" class="cards-grid__item">
+          <div class="grid-menu">
+            <h2 class="grid-menu__name">Дом</h2>
+            <button class="grid-menu__like" type="button" aria-label="Лайк"></button>
+          </div>
+        </li>
+        <li class="cards-grid__list-item">
+          <img src="./images/plant.jpg" alt="Красивое растение" class="cards-grid__item">
+          <div class="grid-menu">
+            <h2 class="grid-menu__name">Очень красивое растение</h2>
+            <button class="grid-menu__like" type="button" aria-label="Лайк"></button>
+          </div>
+        </li>
+        <li class="cards-grid__list-item">
+          <img src="./images/mountain.jpg" alt="Горы" class="cards-grid__item">
+          <div class="grid-menu">
+            <h2 class="grid-menu__name">Горы</h2>
+            <button class="grid-menu__like" type="button" aria-label="Лайк"></button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  <footer class="footer section">
+    <p class="footer__copyright">
+      &copy; 2021. Naome_turbo
+    </p>
+  </footer>
+
+  <form class="edit">
+    <div class="edit__overlay"></div>
+    <div class="edit__content">
+      <button class="edit__button-exit" type="button" aria-label="Закрыть"></button>
+      <h2 class="edit__title">Редактировать профиль</h2>
+      <input class="edit__input edit__name" type="text" required placeholder="Имя" name="name"
+      pattern="[A-Za-zА-Яа-яЁё -]*" minlength="0" maxlength="40" />
+
+      <input class="edit__input edit__description" type="text" required placeholder="О себе"
+      name="about" minlength="0" maxlength="200" />
+      <button class="edit__button-save" type="button">Сохранить</button>
+    </div>
+
+  </form>
+
+  <script src="pages/index.js"></script>
+
+</body>
+
+</html>
