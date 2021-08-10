@@ -1,0 +1,10 @@
+.profile__avatar {
+  background-color: #C4C4C4;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin: 0;
+  padding: 0;
+}
