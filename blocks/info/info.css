@@ -5,7 +5,7 @@
   .info {
     /* margin: 0 auto; */
     margin: 0 auto;
-    height: 54px;
+    min-height: 54px;
     display: flex;
     flex-direction: column;
     justify-content: center;
