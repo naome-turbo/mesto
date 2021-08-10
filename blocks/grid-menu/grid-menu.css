@@ -1,0 +1,9 @@
+.grid-menu {
+  max-width: 246px;
+  min-height: 23px;
+  margin: 25px auto 31px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
