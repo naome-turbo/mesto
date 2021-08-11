@@ -8,7 +8,7 @@
 @media (max-width: 568px) {
   .profile__info {
     margin: 26px auto auto auto;
-    height: 54px;
+    min-height: 54px;
     width: auto;
     /* display: flex;
     flex-direction: row;
