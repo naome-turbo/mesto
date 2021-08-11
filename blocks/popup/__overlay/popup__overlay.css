@@ -1,0 +1,19 @@
+.popup__overlay {
+  position: fixed;
+  
+  background-color: #FFF;
+
+  width: 100%;
+  max-width: 430px;
+  min-height: 330px;
+  background-color: rgba(100,0,0,9);
+
+}
+
+  @media (max-width: 568px) {
+  .popup__overlay {
+    margin-left: 19px;
+    width: 282px;
+    min-height: 322px;
+  }
+}

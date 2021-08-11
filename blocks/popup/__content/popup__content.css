@@ -1,5 +1,5 @@
 .popup__content {
-  position: relative;
+  position: fixed;
 
   background-color: #FFF;
   border-radius: 10px;
@@ -15,7 +15,7 @@
 
 @media (max-width: 568px) {
   .popup__content {
-    margin-left: 19px;
+    /* margin-left: 19px; */
     width: 282px;
     min-height: 322px;
   }
