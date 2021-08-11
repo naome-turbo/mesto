@@ -17,6 +17,6 @@
   .popup__content {
     margin-left: 19px;
     width: 282px;
-    height: 322px;
+    min-height: 322px;
   }
 }
