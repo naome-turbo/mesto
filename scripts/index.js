@@ -9,13 +9,15 @@ const editDescription = document.querySelector('#popup__input_description');
 let formElement = document.querySelector('.popup__content');
 
 function openEdit() {
+  popUp.classList.add('popup__visibility');
   editName.value = infoName.textContent;
   editDescription.value = infoDescription.textContent;
-  popUp.style.visibility = "visible";
+  // popUp.style.visibility = "visible";
 }
 
 function closeEdit() {
-  popUp.style.visibility = "hidden";
+  popUp.classList.remove('popup__visibility');
+  // popUp.style.visibility = "hidden";
 }
 
 function editInfo() {
@@ -24,9 +26,9 @@ function editInfo() {
 }
 
 function saveEdit(e) {
+  e.preventDefault();
   editInfo();
   closeEdit();
-  e.preventDefault();  
 }
 
 openEditBtn.addEventListener('click', openEdit);
