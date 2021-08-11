@@ -5,8 +5,8 @@
   position: absolute;
   width: 32px;
   height: 32px;
-  top: -35px;
-  right: -35px;
+  top: calc(50% - 200px);
+  right: calc(50% - 250px);
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -19,7 +19,7 @@
   .popup__button-exit {
     width: 20px;
     height: 20px;
-    top: -36px;
-    right: 0;
+    top: calc(50% - 197px);
+    right: calc(50% - 148px);
   }
 }
