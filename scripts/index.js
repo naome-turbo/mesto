@@ -24,9 +24,9 @@ function editInfo() {
 }
 
 function saveEdit(e) {
-  e.preventDefault();
   editInfo();
   closeEdit();
+  e.preventDefault();  
 }
 
 openEditBtn.addEventListener('click', openEdit);
