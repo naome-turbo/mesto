@@ -11,13 +11,11 @@ let formElement = document.querySelector('.popup__content');
 function openEdit() {
   editName.value = infoName.textContent;
   editDescription.value = infoDescription.textContent;
-  // popUp.classList.add('popup_visibility');
-  popUp.style.visibility='visible';
+  popUp.style.visibility = "visible";
 }
 
 function closeEdit() {
-  // popUp.classList.remove('popup_visibility');
-  popUp.style.visibility='hidden';
+  popUp.style.visibility = "hidden";
 }
 
 function editInfo() {
@@ -25,21 +23,14 @@ function editInfo() {
   infoDescription.textContent = editDescription.value;
 }
 
+function saveEdit(e) {
+  e.preventDefault();
+  editInfo();
+  closeEdit();
+}
+
 openEditBtn.addEventListener('click', openEdit);
 
 closeEditBtn.addEventListener('click', closeEdit);
 
-// popUp.querySelector("#submit").onclick = function(evt){
-//   evt.preventDefault();
-//   editInfo();
-//   closeEdit();
-//   return false
-// }
-
-
-formElement.addEventListener('submit', function () {
-  evt.preventDefault();
-  editInfo();
-  closeEdit();
-  return false
-});
+formElement.addEventListener('submit', saveEdit);
