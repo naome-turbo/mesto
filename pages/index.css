@@ -21,12 +21,9 @@
 @import url(../blocks/grid-menu/grid-menu.css);
 @import url(../blocks/grid-menu/__name/grid-menu__name.css);
 @import url(../blocks/grid-menu/__like/grid-menu__like.css);
-@import url(../blocks/grid-menu/__like-black/grid-menu__like-black.css);
 @import url(../blocks/popup/popup.css);
-@import url(../blocks/popup/popup_visibility.css);
 @import url(../blocks/popup/__button-exit/popup__button-exit.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__input/popup__input.css);
 @import url(../blocks/popup/__button-save/popup__button-save.css);
-@import url(../blocks/popup/__overlay/popup__overlay.css);
 @import url(../blocks/popup/__content/popup__content.css);
