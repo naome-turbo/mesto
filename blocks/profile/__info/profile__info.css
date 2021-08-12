@@ -1,7 +1,6 @@
-.profile__info {
+/* .profile__info {
   display: flex;
   width: 100%;
-  /* align-items: baseline; */
   margin-left: 30px;
 }
 
@@ -10,8 +9,9 @@
     margin: 26px auto auto auto;
     min-height: 54px;
     width: auto;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center; */
   }
+} */
+.profile__info {
+  margin: 0;
+  padding: 0;
 }
