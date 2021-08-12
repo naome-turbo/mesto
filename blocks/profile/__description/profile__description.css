@@ -2,7 +2,7 @@
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
-  margin: 0 0 25px 3px;
+  margin: 0 0 25px 30px;
   padding: 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -10,7 +10,7 @@
   max-width: 336px;
 }
 
-@media screen and (max-width: 602px) {
+@media screen and (max-width: 568px) {
 	.profile__description {
     margin: 0 auto 0;
     font-size: 14px;

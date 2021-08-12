@@ -1,12 +1,12 @@
 .profile__title {
   display: flex;
   flex-direction: row;
-  margin: 18px 0 0 3px;
+  margin: 18px 0 0 30px;
   max-width: 336px;
   padding: 0;
 }
 
-@media screen and (max-width: 602px) {
+@media screen and (max-width: 568px) {
   .profile__title {
     margin: 15px auto 0;
     max-width: 282px;
