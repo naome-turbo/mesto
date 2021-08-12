@@ -2,8 +2,7 @@
   background-color: #000;
   color: #fff;
   margin: 45px auto 60px auto;
-  /* padding: 0 10px 0 10px; */
-  /* border: 1px solid red; */
+  padding: 0 10px 0 10px;
   max-width: 880px;
   min-width: 320px;
 }
