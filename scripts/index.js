@@ -9,14 +9,14 @@ const editDescription = document.querySelector('#popup__input_description');
 let formElement = document.querySelector('.popup__content');
 
 function openEdit() {
-  popUp.classList.add('popup__visibility');
+  popUp.classList.add('popup_visibility');
   editName.value = infoName.textContent;
   editDescription.value = infoDescription.textContent;
   // popUp.style.visibility = "visible";
 }
 
 function closeEdit() {
-  popUp.classList.remove('popup__visibility');
+  popUp.classList.remove('popup_visibility');
   // popUp.style.visibility = "hidden";
 }
 
