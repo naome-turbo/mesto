@@ -6,11 +6,10 @@
   object-position: center;
   margin: 0;
   padding: 0;
-
 }
 
 @media screen and (max-width: 1279px) {
-	.profile__avatar {
+  .profile__avatar {
     margin: 0;
   }
 }
