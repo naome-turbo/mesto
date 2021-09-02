@@ -2,7 +2,7 @@
   max-width: 22px;
   max-height: 22px;
   background-image: url(../../../images/addButton.svg);
-  padding: 25px 75px;
+  padding: 23px 73px;
   border: 2px solid white;
   border-radius: 2px;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
   .profile__add {
     max-width: 16px;
     max-height: 16px;
-    padding: 25px 141px;
+    padding: 23px 139px;
     margin: 36px auto 0 auto;
   }
 }
