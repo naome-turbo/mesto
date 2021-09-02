@@ -11,11 +11,12 @@
   border: none;
   cursor: pointer;
 }
+
 .popup__button-exit:hover {
   opacity: 0.6;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 668px) {
   .popup__button-exit {
     width: 20px;
     height: 20px;

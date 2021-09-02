@@ -1,6 +1,6 @@
 .grid-menu__like {
-  height: 19px;
-  width: 22px;
+  max-height: 19px;
+  max-width: 22px;
   background-image: url(../../../images/like.svg);
   color: #000;
   padding: 0;

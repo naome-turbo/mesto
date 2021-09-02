@@ -1,9 +1,10 @@
 .profile__add {
-  width: 22px;
-  height: 22px;
+  max-width: 22px;
+  max-height: 22px;
   background-image: url(../../../images/addButton.svg);
-  padding: 22px 74px;
+  padding: 25px 75px;
   border: 2px solid white;
+  border-radius: 2px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin: 33px 0 auto auto;
@@ -16,11 +17,11 @@
 }
 
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 768px) {
   .profile__add {
-    width: 10px;
-    height: 10px;
-    padding: 22px 138px;
-    margin: 30px auto 0;
+    max-width: 16px;
+    max-height: 16px;
+    padding: 25px 141px;
+    margin: 36px auto 0 auto;
   }
 }

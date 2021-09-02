@@ -6,7 +6,7 @@
   min-height: 330px;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 668px) {
   .popup__content {
     width: 282px;
     min-height: 322px;

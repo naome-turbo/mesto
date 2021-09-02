@@ -8,7 +8,6 @@
   background-color: black;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-
 }
 
 .profile__button:hover {
@@ -16,12 +15,11 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 602px) {
+@media screen and (max-width: 768px) {
 	.profile__button {
     width: 6px;
     height: 6px;
     padding: 8px;
     margin: 19px 0 0 7px;
-
   }
 }
