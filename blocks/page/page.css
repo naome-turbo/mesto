@@ -2,13 +2,21 @@
   background-color: #000;
   color: #fff;
   margin: 45px auto 60px auto;
-  padding: 0 10px 0 10px;
+  /* padding: 0 10px 0 10px; */
   max-width: 880px;
   min-width: 320px;
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (min-width: 768px) and (max-width: 980px) {
   .page {
-    margin: 28px 0 36px 0;
+    max-width: 668px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .page {
+    margin-top: 28px;
+    margin-bottom: 36px;
+    max-width: 282px;
   }
 }
