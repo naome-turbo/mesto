@@ -1,7 +1,7 @@
-const userTemplate = document.querySelector('#loading').content;
-const usersOnline = document.querySelector('.cards-grid__list');
-let userElement;
-// массив фотографий для загрузки
+const cardsTemplate = document.querySelector('#cards-grid__list-item').content;
+const cards = document.querySelector('.cards-grid__list');
+let cardImg;
+
 const initialCards = [
   {
     name: 'Архыз',
@@ -16,7 +16,7 @@ const initialCards = [
     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
   },
   {
-    name: 'Woman',
+    name: 'Девушка USA',
     link: 'https://images.unsplash.com/photo-1631831162589-3e1ff4d5a371?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80'
   },
   {
@@ -28,15 +28,10 @@ const initialCards = [
     link: 'https://img4.goodfon.ru/original/1440x900/f/c0/ai-nih-mark-prinz-kareglazaia-vostochnaia-gubki-lokony.jpg'
   }
 ];
+
 initialCards.forEach(function (item) {
-  // клонируем содержимое тега template
-  userElement = userTemplate.querySelector('.cards-grid__list-item').cloneNode(true);
-
-  // наполняем содержимым
-  userElement.querySelector('.cards-grid__item').src = item.link;
-  userElement.querySelector('.grid-menu__name').textContent = item.name;
-  // userElement.querySelector('.cards-grid__basket').src = "./images/basket.svg";
-
-  // отображаем на странице
-  usersOnline.append(userElement);
+  cardImg = cardsTemplate.querySelector('.cards-grid__list-item').cloneNode(true);
+  cardImg.querySelector('.cards-grid__item').src = item.link;
+  cardImg.querySelector('.grid-menu__name').textContent = item.name;
+  cards.append(cardImg);
 });
