@@ -3,29 +3,30 @@ const cards = document.querySelector('.cards-grid__list');
 let cardImg;
 
 const initialCards = [
+
   {
-    name: 'Архыз',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+    name: 'Пляж',
+    link: 'images/beach.jpg'
   },
   {
-    name: 'Кошка',
-    link: 'https://images.unsplash.com/photo-1631833034795-01014ccd75da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80'
+    name: 'Автомобиль',
+    link: 'images/car.jpg'
   },
   {
     name: 'Иваново',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+    link: 'images/forest.jpg'
   },
   {
-    name: 'Девушка USA',
-    link: 'https://images.unsplash.com/photo-1631831162589-3e1ff4d5a371?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80'
+    name: 'Хижина',
+    link: 'images/house.jpg'
   },
   {
-    name: 'Холмогорский район',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+    name: 'Заросли',
+    link: 'images/plant.jpg'
   },
   {
-    name: 'Азиатская девушка',
-    link: 'https://img4.goodfon.ru/original/1440x900/f/c0/ai-nih-mark-prinz-kareglazaia-vostochnaia-gubki-lokony.jpg'
+    name: 'Горы',
+    link: 'images/mountain.jpg'
   }
 ];
 
