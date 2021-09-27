@@ -20,27 +20,28 @@
       <img class="profile__avatar" src="./images/avatar.jpg" alt="Аватар">
       <div class="profile__info">
         <div class="profile__title">
-          <h1 class="profile__name">Жак-Ив Кусто</h1>
+          <h1 class="profile__name">Клюво-блогер</h1>
             <button class="profile__button" id="profile_edit_btn" type="button" aria-label="Редактировать"></button>
         </div>
-        <p class="profile__description">Исследователь океана</p>
+        <p class="profile__description">Путешественник</p>
       </div>
       <button class="profile__add" id="profile__add" type="button" aria-label="Добавить"></button>
     </section>
 
-    <section class="cards-grid section">
+    <section class="section cards-grid">
       <ul class="cards-grid__list">
-        <template id="loading">
+
+        <template id="cards-grid__list-item">
           <li class="cards-grid__list-item">
-            <img class="cards-grid__item">
-            <!-- <img class="cards-grid__basket"> -->
+            <img class="cards-grid__item" alt="item">
             <div class="grid-menu">
-              <h2 class="grid-menu__name"></h2>
+              <h2 class="grid-menu__name">Название</h2>
               <button class="grid-menu__like" type="button" aria-label="Лайк"></button>
             </div>
           </li>
-        </ul>
-      </template>
+        </template>
+
+      </ul>
     </section>
 
   </main>
@@ -52,7 +53,7 @@
   <div class="popup">
     <div class="popup__overlay">
       <button class="popup__button-exit" type="button" aria-label="Закрыть"></button>
-      <h2 class="popup__title">Редактировать профиль</h2>
+      <h2 class="popup__title"></h2>
       <form class="popup__content" name="edition">
         <input class="popup__input" id="popup__input_name" type="text" required placeholder="Имя" name="name" minlength="2" maxlength="40" />
         <input class="popup__input" id="popup__input_description" type="text" required placeholder="О себе" name="about" minlength="2" maxlength="100" />
@@ -62,7 +63,7 @@
   </div>
 
   <script src="scripts/index.js"></script>
-  <script src="scripts/cards-load.js"></script>
+  <script src="scripts/loader.js"></script>
 
 </body>
 
