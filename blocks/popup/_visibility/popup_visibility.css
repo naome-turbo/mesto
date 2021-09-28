@@ -1,3 +1,14 @@
 .popup_visibility {
   visibility: visible;
+  animation: show 1s linear forwards;
 }
+
+@keyframes show{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
