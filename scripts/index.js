@@ -10,9 +10,6 @@ const cardName = info.querySelector('.grid-menu__name');
 const profDescription = info.querySelector('.profile__description');
 const cardDescription = info.querySelector('.cards-grid__item');
 
-const crdsTemplate = document.querySelector('#cards-grid__list-item').content;
-const crds = document.querySelector('.cards-grid__list');
-
 let editName = document.querySelector('#popup__input_name');
 let editDescription = document.querySelector('#popup__input_description');
 let formElement = document.querySelector('.popup__content');
@@ -21,14 +18,15 @@ let btn;
 function openEdit() {
   if (btn === 'add') {
     formName.textContent = "Новое место";
-    editName.value = "Название";
-    editDescription.value = "Ссылка на картинку";
+    editName.value = "";
+    editDescription.value = "";
+    document.querySelector('.popup__button-save').innerHTML = 'Создать';
   } else {
     formName.textContent = "Редактировать профиль";
     editName.value = profName.textContent;
     editDescription.value = profDescription.textContent;
+    document.querySelector('.popup__button-save').innerHTML = 'Сохранить';
   }
-
   popUp.classList.add('popup_visibility');
 }
 
@@ -38,14 +36,21 @@ function closeEdit() {
 
 function editInfo() {
   if (btn === 'add') {
-    const crdImg = cardsTemplate.querySelector('.cards-grid__list-item').cloneNode(true);
-    crdImg.querySelector('.cards-grid__item').src = editDescription.value;
-    crdImg.querySelector('.grid-menu__name').textContent = editName.value;
-    crds.prepend(crdImg);
+    cardImg = cardsTemplate.querySelector('.cards-grid__list-item').cloneNode(true);
+    cardImg.querySelector('.cards-grid__item').src = editDescription.value;
+    cardImg.querySelector('.grid-menu__name').textContent = editName.value;
+    cards.prepend(cardImg);
+    like();
   } else {
     profName.textContent = editName.value;
     profDescription.textContent = editDescription.value;
   }
+}
+
+function like() {
+  cardImg.querySelector('.grid-menu__like').addEventListener('click', function(e) {
+    e.target.classList.toggle('grid-menu__like_aktive');
+  });
 }
 
 function saveEdit(e) {
