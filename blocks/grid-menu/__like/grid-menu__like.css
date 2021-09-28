@@ -17,3 +17,7 @@
 .grid-menu__like:hover {
   opacity: 0.5;
 }
+
+.grid-menu__like_aktive {
+  background-image: url(../../../images/like_black.svg);
+}
