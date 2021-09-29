@@ -3,25 +3,24 @@ const cards = document.querySelector('.cards-grid__list');
 let cardImg;
 
 const initialCards = [
-
+  {
+    name: 'Море',
+    link: 'images/sea.jpg'
+  },
+  {
+    name: 'Лес',
+    link: 'images/forest.jpg'
+  },
   {
     name: 'Пляж',
     link: 'images/beach.jpg'
   },
   {
-    name: 'Автомобиль',
-    link: 'images/car.jpg'
-  },
-  {
-    name: 'Иваново',
-    link: 'images/forest.jpg'
-  },
-  {
-    name: 'Хижина',
+    name: 'Дом',
     link: 'images/house.jpg'
   },
   {
-    name: 'Заросли',
+    name: 'Красивое растение',
     link: 'images/plant.jpg'
   },
   {
