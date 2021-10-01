@@ -1,8 +1,11 @@
 const popUp = document.querySelector('.popup');
 const info = document.querySelector('.profile__info');
+const popUpImg = document.querySelector('#popupImg');
+
 const openEditBtn = document.getElementById('profile_edit_btn');
 const openAddBtn = document.getElementById('profile__add');
-const closeEditBtn = document.querySelector('.popup__button-exit');
+const closeEditBtn = document.querySelector('#exit');
+const closeViewBtn = document.querySelector('#close');
 
 const formName = document.querySelector('.popup__title');
 const profName = info.querySelector('.profile__name');
@@ -31,20 +34,32 @@ function openEdit() {
 }
 
 function closeEdit() {
+  popUp.classList.add('popup_close');
   popUp.classList.remove('popup_visibility');
+  popUpImg.classList.remove('popup_visibility');
 }
 
 function editInfo() {
   if (btn === 'add') {
     cardImg = cardsTemplate.querySelector('.cards-grid__list-item').cloneNode(true);
     cardImg.querySelector('.cards-grid__item').src = editDescription.value;
+    cardImg.querySelector('.cards-grid__item').alt = editName.value;
     cardImg.querySelector('.grid-menu__name').textContent = editName.value;
     cards.prepend(cardImg);
     like();
+    click();
   } else {
     profName.textContent = editName.value;
     profDescription.textContent = editDescription.value;
   }
+}
+
+function click() {
+  cardImg.querySelector('.cards-grid__item').addEventListener('click', function(e) {
+    popUpImg.classList.add('popup_visibility');
+    popUpImg.querySelector('.popup__view').src=e.target.src;
+    popUpImg.querySelector('.popup__text').innerHTML=e.target.alt;
+  });
 }
 
 function like() {
@@ -59,9 +74,11 @@ function saveEdit(e) {
   closeEdit();
 }
 
+
 openEditBtn.addEventListener('click', function(){ openEdit(btn = 'ed'); });
 openAddBtn.addEventListener('click', function(){ openEdit(btn = 'add'); });
 
 closeEditBtn.addEventListener('click', closeEdit);
+closeViewBtn.addEventListener('click', closeEdit);
 
 formElement.addEventListener('submit', saveEdit);
