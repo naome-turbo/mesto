@@ -59,6 +59,7 @@ function click() {
     popUpImg.classList.add('popup_visibility');
     popUpImg.querySelector('.popup__view').src=e.target.src;
     popUpImg.querySelector('.popup__text').innerHTML=e.target.alt;
+    document.querySelector('#popupImg').style.backgroundColor='rgba(0,0,0,.9)';
   });
 }
 
