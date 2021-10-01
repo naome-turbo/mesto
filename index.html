@@ -52,13 +52,24 @@
     </footer>
     <div class="popup">
       <div class="popup__overlay">
-        <button class="popup__button-exit" type="button" aria-label="Закрыть"></button>
+        <button class="popup__button-exit" id="exit" type="button" aria-label="Закрыть"></button>
         <h2 class="popup__title"></h2>
         <form class="popup__content" name="edition">
           <input class="popup__input" id="popup__input_name" type="text" required placeholder="Название" name="name" minlength="2" maxlength="40" />
           <input class="popup__input" id="popup__input_description" type="text" required placeholder="Ссылка на картинку" name="about" minlength="2" maxlength="100" />
           <button class="popup__button-save" type="submit" id="submit">Сохранить</button>
         </form>
+      </div>
+    </div>
+    <div class="popup" id="popupImg">
+      <div class="popup__overlay_img">
+        <button class="popup__button-exit" id="close" type="button" aria-label="Закрыть"></button>
+        <form class="popup__content_img" name="view">
+          <img class="popup__view">
+        </form>
+        <p class="popup__text">
+          text
+        </p>
       </div>
     </div>
 
