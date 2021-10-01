@@ -33,6 +33,7 @@ initialCards.forEach(function (item) {
   cardImg = cardsTemplate.querySelector('.cards-grid__list-item').cloneNode(true);
   cardImg.querySelector('.cards-grid__item').src = item.link;
   cardImg.querySelector('.grid-menu__name').textContent = item.name;
+  cardImg.querySelector('.cards-grid__item').alt = item.name;
   cards.append(cardImg);
   like();
   click();
