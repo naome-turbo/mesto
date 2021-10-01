@@ -35,4 +35,5 @@ initialCards.forEach(function (item) {
   cardImg.querySelector('.grid-menu__name').textContent = item.name;
   cards.append(cardImg);
   like();
+  click();
 });
