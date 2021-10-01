@@ -1,6 +1,6 @@
 .popup_visibility {
   visibility: visible;
-  animation: show 1s linear forwards;
+  animation: show .3s;
 }
 
 @keyframes show{
@@ -11,4 +11,3 @@
     opacity: 1;
   }
 }
-

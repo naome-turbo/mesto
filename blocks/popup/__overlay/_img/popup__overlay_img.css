@@ -1,0 +1,14 @@
+.popup__overlay_img {
+  /* background-color: red; */
+  position: fixed;
+  max-width: 75vw;
+  max-height: 75vh;
+  margin: 0 auto;
+}
+
+@media (max-width: 668px) {
+  .popup__overlay_img {
+    max-width: 240px;
+    max-height: 299px;
+  }
+}

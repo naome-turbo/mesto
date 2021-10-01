@@ -1,0 +1,14 @@
+.popup__view {
+  position: relative;
+  box-sizing: border-box;
+  object-fit: cover;
+  max-width: 75vw;
+  max-height: 75vh;
+}
+
+@media (max-width: 668px) {
+  .popup__view {
+    max-width: 240px;
+    max-height: 299px;
+  }
+}
