@@ -37,4 +37,5 @@ initialCards.forEach(function (item) {
   cards.append(cardImg);
   like();
   click();
+  trash();
 });
