@@ -20,6 +20,7 @@
 @import url(../blocks/cards-grid/__item/cards-grid__item.css);
 @import url(../blocks/grid-menu/grid-menu.css);
 @import url(../blocks/grid-menu/__name/grid-menu__name.css);
+@import url(../blocks/grid-menu/__delete/grid-menu__delete.css);
 @import url(../blocks/grid-menu/__like/grid-menu__like.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__button-exit/popup__button-exit.css);
