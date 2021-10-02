@@ -48,6 +48,7 @@ function editInfo() {
     cards.prepend(cardImg);
     like();
     click();
+    trash();
   } else {
     profName.textContent = editName.value;
     profDescription.textContent = editDescription.value;
@@ -75,6 +76,13 @@ function saveEdit(e) {
   closeEdit();
 }
 
+function trash(e) {
+  document.querySelectorAll('.grid-menu__delete').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      console.log(e.currentTarget.parentElement.remove());
+    });
+  });
+}
 
 openEditBtn.addEventListener('click', function(){ openEdit(btn = 'ed'); });
 openAddBtn.addEventListener('click', function(){ openEdit(btn = 'add'); });
