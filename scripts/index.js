@@ -24,11 +24,15 @@ function openEdit() {
     editName.value = "";
     editDescription.value = "";
     document.querySelector('.popup__button-save').innerHTML = 'Создать';
+    document.getElementById('popup__input_name').placeholder = 'Название';
+    document.getElementById('popup__input_description').placeholder = 'Ссылка на картинку';
   } else {
     formName.textContent = "Редактировать профиль";
     editName.value = profName.textContent;
     editDescription.value = profDescription.textContent;
     document.querySelector('.popup__button-save').innerHTML = 'Сохранить';
+    document.getElementById('popup__input_name').placeholder = 'Имя';
+    document.getElementById('popup__input_description').placeholder = 'О себе';
   }
   popUp.classList.add('popup_visibility');
 }
