@@ -83,7 +83,7 @@ function saveEdit(e) {
 function trash(e) {
   document.querySelectorAll('.grid-menu__delete').forEach(function(el) {
     el.addEventListener('click', function(e) {
-      console.log(e.currentTarget.parentElement.remove());
+      console.log(e.currentTarget.parentElement.parentElement.remove());
     });
   });
 }
