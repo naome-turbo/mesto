@@ -17,6 +17,7 @@
 @import url(../blocks/cards-grid/cards-grid.css);
 @import url(../blocks/cards-grid/__list/cards-grid__list.css);
 @import url(../blocks/cards-grid/__list-item/cards-grid__list-item.css);
+@import url(../blocks/cards-grid/__content/cards-grid__content.css);
 @import url(../blocks/cards-grid/__item/cards-grid__item.css);
 @import url(../blocks/grid-menu/grid-menu.css);
 @import url(../blocks/grid-menu/__name/grid-menu__name.css);
