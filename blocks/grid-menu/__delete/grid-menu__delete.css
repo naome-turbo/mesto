@@ -1,19 +1,21 @@
 .grid-menu__delete {
   min-height: 18px;
   min-width: 19.3px;
-  /* border: 2px solid red; */
-  background-image: url(../../../images/basket.png);
-  background-color: #000;
+  background-image: url(../../../images/basket.svg);
   padding: 0;
   margin: 0;
   background-size: 19px 22px cover;
   background-position: right;
   background-repeat: no-repeat;
-  /* background-color: transparent; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color:inherit;
+  border: none;
   cursor: pointer;
-  z-index: 5;
+  z-index: 1;
 }
 
 .grid-menu__delete:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
