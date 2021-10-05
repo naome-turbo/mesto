@@ -1,0 +1,16 @@
+.popup_img-overlay {
+  /* background-color: red; */
+  position: fixed;
+  min-width: 433px;
+  max-width: 75vw;
+  min-height: 540px;
+  max-height: 75vh;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .popup_img-overlay {
+    max-width: 240px;
+    max-height: 299px;
+  }
+}
