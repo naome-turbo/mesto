@@ -62,7 +62,7 @@ function editInfo() {
 function click() {
   cardImg.querySelector('.cards-grid__item').addEventListener('click', function(e) {
     popUpImg.classList.add('popup_visibility');
-    popUpImg.querySelector('.popup__view').src=e.target.src;
+    popUpImg.querySelector('.popup__img').src=e.target.src;
     popUpImg.querySelector('.popup__text').innerHTML=e.target.alt;
     document.querySelector('#popupImg').style.backgroundColor='rgba(0,0,0,.9)';
   });
