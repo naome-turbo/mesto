@@ -1,0 +1,16 @@
+.popup__img {
+  position: relative;
+  box-sizing: border-box;
+  object-fit: cover;
+  min-width: 433px;
+  max-width: 75vw;
+  min-height: 540px;
+  max-height: 75vh;
+}
+
+@media (max-width: 768px) {
+  .popup__img {
+    min-width: 240px;
+    min-height: 299px;
+  }
+}
