@@ -1,13 +1,6 @@
 .popup_visibility {
   visibility: visible;
-  animation: show .3s;
-}
-
-@keyframes show{
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  height: 100%;
+  opacity: 1;
+  transition-delay: 0s, 0s;
 }
